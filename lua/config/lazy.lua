@@ -17,7 +17,10 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
   spec = {
     -- add LazyVim and import its plugins
-    { "LazyVim/LazyVim", import = "lazyvim.plugins" },
+    -- I also add the opts in the line below
+    { "LazyVim/LazyVim", import = "lazyvim.plugins", opts = {
+      colorscheme = "solarized-osaka",
+    } },
     -- import/override with your plugins
     { import = "plugins" },
   },
