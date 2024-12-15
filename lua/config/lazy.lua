@@ -21,6 +21,22 @@ require("lazy").setup({
     { "LazyVim/LazyVim", import = "lazyvim.plugins", opts = {
       colorscheme = "solarized-osaka",
     } },
+
+    -- I added the extras here
+
+    -- Prettier
+    { import = "lazyvim.plugins.extras.formatting.prettier" },
+    -- json
+    { import = "lazyvim.plugins.extras.lang.json" },
+    -- git
+    { import = "lazyvim.plugins.extras.lang.git" },
+    -- python
+    { import = "lazyvim.plugins.extras.lang.python" },
+    -- sql
+    { import = "lazyvim.plugins.extras.lang.sql" },
+    -- tailwind - css
+    { import = "lazyvim.plugins.extras.lang.tailwind" },
+
     -- import/override with your plugins
     { import = "plugins" },
   },
